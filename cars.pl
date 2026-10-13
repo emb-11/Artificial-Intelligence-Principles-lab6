@@ -13,7 +13,7 @@ truck(toyota,  25000, 2, black, 25000).
 can_buy(Cost) :-
     car(Model, C1, _, _, _),
     C1 < Cost,
-    write('With '), write(C1),
+    write('With '), write(C1), 
     write(' you can purchase the car '), write(Model), nl.
 
 can_buy(Cost) :-
@@ -31,13 +31,13 @@ can_buy(Cost) :-
 can_buy(Cost, Colour) :-
     car(Model, C1, _, Colour, _),
     C1 < Cost,
-    write('With '), write(C1),
+    write('With '), write(C1), write('and the colour '), write(Colour),
     write(' you can purchase the car '), write(Model), nl.
 
 can_buy(Cost, Colour) :-
     truck(Model, C2, _, Colour, _),
     C2 < Cost,
-    write('With '), write(C2),
+    write('With '), write(C2), write('and the colour '), write(Colour),
     write(' you can purchase the truck '), write(Model), nl.
 
 
